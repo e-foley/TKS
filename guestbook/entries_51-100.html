@@ -1,0 +1,2344 @@
+<html><head>
+
+
+
+<style>
+body {
+	text-align: center;
+}
+small {
+	font-family: Verdana;
+	font-size: 10px;
+}
+#mainContainer {
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 14;
+}
+#topContent big {
+	padding-left: 10px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #397DBD;
+	font-family: Arial;
+}
+#topContent span a {
+	font-size: 10px;
+	color: #FF0000;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-left: 7px;
+	display: block;
+	margin: 5px 0 10px 0;
+}
+a {
+	color: #0000FF;	
+}
+form {
+	margin: 0;
+	padding: 0;	
+}
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 0px;
+}
+#breadcrumb {
+	padding: 0 0 0 10px;
+	margin: 0 0 10px 0;
+	color: #000;
+}
+#breadcrumb a {	color: #0000FF; text-decoration: underline; font-weight:normal}
+#breadcrumb a:hover { text-decoration: underline; }
+
+.lh2col {
+	float: left;
+	width: 550px;
+	margin: 0;
+	padding: 0;
+}
+.rh1col {
+	margin-left: 555px;
+	width: 190px;
+	padding: 1px;
+}
+.rh1col a { text-decoration: underline; }
+.rh1col a:hover { text-decoration: underline; }
+.rh1col span a {
+	float: right;
+	font-size: .63em;
+	text-decoration: underline;
+}
+
+.modTxtLft {
+	margin: 13px 0 0 12px;
+	padding: 0 0 10px 0;
+	float: left;
+	width: 245px;
+	text-align: left;
+	display: inline;
+	font-size: .65em;
+	color: #646464;
+	font-family: Verdana;
+}
+.modTxtRt {
+	margin: 13px 0 0 270px;
+	padding: 0 0 10px 0;
+	width: 245px;
+	text-align: left;
+	font-size: .65em;
+	color: #646464;
+	font-family: Verdana;
+}
+DIV.modTxtRt UL LI, DIV.modTxtLft UL LI{line-height:150%;}
+.modFullWidth {
+	margin: 10px 0 0 12px;
+	padding: 0;
+	width: 520px;
+	text-align: left;
+	color: #646464;
+	font-family: Verdana;
+}
+.modEntireWidthPln {
+	margin: 10px 0 0 12px;
+	padding: 0;
+	width: 730px;
+	text-align: left;
+	color: #000;
+	font-family: Verdana;
+}
+.modFullWidthPln {
+	margin: 10px 0 0 12px;
+	padding: 0;
+	width: 500px;
+	text-align: left;
+	color: #000;
+	font-family: Verdana;
+}
+.modFullWidthPln h2 a {
+	font-family: Arial;
+	color: #0000FF;
+	font-weight: normal;
+}
+.modFullWidthPln td {
+	font-size: .63em;
+	color: #A0A0A0;
+}
+.modFullWidthPln #stats {
+	background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/gr/stats_box_1.gif) no-repeat;
+	margin: 0;
+	padding: 0;
+	width: 344px;
+	height: 113px;
+}
+.modFullWidthPln td span {
+	color: #A0A0A0;
+}
+.modFullWidthPln #stats td {
+	color: #000;
+}
+
+.modFullWidthPln #tdpromo {
+	padding-left: 1em;
+	color: #60834A;
+}
+.modFullWidthPln #tdpromo a {
+	font-size: 1em;
+}
+
+.modFullWidth td {
+	font-size: .83em;
+	padding-bottom: 3px;
+}
+#SiteSelect {
+	margin: 15px 0 15px 0;
+}
+#SiteSelect a {
+	margin: 0 0 0 12px;
+	font-family: Arial;
+	font-size: 13px;
+}
+#SiteSelect h2 {
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #60834A;
+	display: inline;
+}
+.modTxtLft small, .modTxtRt small {
+	font-size: 1.0em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+.modTxtLft img, .modTxtRt img {
+	margin-top: 3px;
+}
+.modTxtLft div, .modTxtRt div {
+	padding-left: 26px;
+}
+.modTxtLft span, .modTxtRt span {
+	color: #0000FF;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 4px;
+}
+.modTxtLft ul, .modTxtRt ul {
+	margin: 1px 0 0 1em;
+	padding: 1px 0 0 1em;
+	color: #000;
+}
+#slimul {
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #000;
+}
+.modHeader {
+	font-size: .83em;
+	font-family: Arial;
+	color: #60834A;
+	font-weight: bold;
+	background-color: #E7EFE7;
+	padding: 1px 3px 3px 3px;
+	margin: 0;
+	text-align: left;
+}
+
+.modHeadernoArw {
+	font-size: .83em;
+	font-family: Arial;
+	color: #60834A;
+	font-weight: bold;
+	background-color: #E7EFE7;
+	padding: 1px 3px 3px 3px;
+	margin: 0;
+	text-align: left;
+}
+.brdlesscontent .modTxtLft, .brdlesscontent .modTxtRt {
+	margin: 13px 0 0 12px;
+	padding: 0;
+	float: left;
+	width: 245px;
+	text-align: left;
+	display: inline;
+	font-size: .83em;
+	color: #000;
+	font-family: Arial;
+}
+.brdlesscontent .modTxtLft img, .brdlesscontent .modTxtRt img {
+	margin: 5px 3px 70px 0;
+}
+.brdlesscontent .modTxtLft a, .brdlesscontent .modTxtRt a {
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: Arial;
+}
+.brdlesscontent .modTxtLft a:hover, .brdlesscontent .modTxtRt a:hover {
+	text-decoration: underline;
+}
+
+
+h1 {
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-size: .88em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #61834C;
+}
+h2 {
+	color: #000;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: bold;
+}
+#topContent #h2grn {
+	color: #6B9154;
+}
+h3 {
+	margin: 0 0 2px 0;
+	padding: 0;
+	font-size: 1.2em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000;
+}
+h4 {
+	font-size: 1em;
+	font-family: Verdana;
+	color: #636563;
+	font-weight: bold;
+	margin: 4px 0 0 0;
+	padding: 0;
+}
+h5 {
+	font-size: .83em;
+	font-family: Arial;
+	color: #636563;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+h6 {
+	font-size: .93em;
+	font-family: Verdana;
+	color: #000;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+#LrgModHeader {
+	color: #6B9154;
+	font-weight: bold;
+	font-size: 18px;
+}
+#toolsCompare {
+	font-family: Arial;
+	font-size: .83em;
+}
+#toolsCompare h2 {
+	color: #6B9154;
+	font-weight: bold;
+	font-size: 18px;
+}
+#toolsCompareTable {
+	font-family: Arial;
+	font-size: .83em;
+}
+#toolsCompareTable th {
+	font-weight: normal;
+}
+#toolsCompareTable th a {
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+#toolsCompareTable th div {
+	margin-top: 5px;
+	color: #646464;
+	font-family: Verdana;
+	font-size: 10px;
+}
+#toolsCompareTable th h2 {
+	color: #6B9154;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: Arial;
+}
+#toolsCompareTable td {
+	color: #000;
+	font-size: 13px;
+	font-family: Arial;
+	border-bottom: solid 1px #D2E2CA
+}
+#toolsCompareTable td span {
+	color: #FF0000;
+}
+#toolsCompareTable #whtbtmln {
+	border-bottom: solid 1px #FFF
+}
+
+
+
+#choosetools {
+	width: 100%;
+	margin-top: 20px;
+}
+#choosetools #ctleft {
+	float: left;
+	border-right: 1px dashed #ccc;
+	width: 360px;
+	height: 530px;
+	color: #646464;
+}
+#choosetools #ctright div {
+	width: 310px;
+	margin: 0 0 20px 380px;
+	font-size: 10px;
+	font-family: Verdana;
+	color: #646464;
+}
+#choosetools #ctleft h2, #choosetools #ctright div h2 {
+	color: #6B9154;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+#choosetools #ctright div h2 {
+	font-size: 14px;
+}
+#choosetools #ctleft h3 {
+	color: #397DBD;
+	font-family: Arial;
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+#choosetools #ctright div h3 {
+	color: #397DBD;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 2px 0;
+	padding: 0;
+}
+#choosetools #ctright div img {
+	margin: 0 5px 90px 0;
+	padding: 4px 0 0 0;
+}
+#choosetools #ctright div.ctrfirst {
+	border-bottom: 1px dashed #ccc;
+	padding: 0 0 20px 0;
+}
+#choosetools #ctright div span, #choosetools #ctright div p {
+	margin-left: 20px;
+}
+#choosetools #ctleft img.ctlfirst {
+	margin: 0 5px 400px 0;
+	padding: 4px 0 0 0;
+}
+#choosetools #ctright div ul {
+	margin: 5px 0 0 19px;
+	padding: 0 0 0 19px;
+}
+#choosetools #ctleft ul {
+	margin: 8px 0 12px 19px;
+	padding: 0 0 0 19px;
+}
+
+
+#topContent h2 {
+	padding-left: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #397DBD;
+	font-family: Arial;
+}
+.btn, .boldbtn {
+	background:#E0E1E5 url('http://us.i1.yimg.com/us.yimg.com/i/us/plus/el/btbg.gif');
+	border:1px solid #565656;
+	border-bottom-width:2px;
+	padding:0.2em 0 0.1em 0;
+	color: #000000;
+	cursor:hand;
+	margin: 3px;
+	font-weight: normal;	
+}
+.boldbtn {
+	font-weight: bold;
+}
+.manageMod {
+	color: #000;
+	font-size: 10px;
+	display: block;
+	margin-bottom: 4px;
+}
+#qlrt {
+	float: right;
+	margin-top: 0;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #0956A6;
+	text-align: right;
+}
+.bodycontent {
+	font: 13px/16px Arial;
+	padding-left: 10px;
+}
+.formbtns {
+	background-color: #F0F0F0;
+	padding: 7px;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 16px;
+}
+#sitestats {
+	font-size: .63em;	
+}
+#defaultText {
+	font-family: Arial;
+	font-size: 13px;
+}
+#defaultText .blockindent {
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+.expltext {
+	margin-left: 110px;
+}
+
+
+.lh2col .rbtop { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_t_1.gif) repeat-x;}
+.lh2col .rbtop div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_tl_1.gif) no-repeat top left;}
+.lh2col .rbtop div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_tr_1.gif) no-repeat top right;}
+.lh2col .rbbot { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_b_2.gif) repeat-x;}
+.lh2col .rbbot div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_bl_1.gif) no-repeat top left;}
+.lh2col .rbbot div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_br_1.gif) no-repeat top right;}
+.lh2col .rbcontentwrap { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_l_1.gif) repeat-y;}
+.lh2col .rbcontent { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_r_2.gif) repeat-y right;}
+.lh2col .rbtop div, .lh2col .rbtop, .lh2col .rbbot div, .lh2col .rbbot {
+        width: 100%; height: 4px; font-size: 1px;}
+.lh2col .rbcontent  { padding: 0 6px 20px 4px; margin: 0;}
+.lh2col .rbcontent  a { text-decoration: underline;}
+.lh2col .rbcontent  a:hover { text-decoration: underline;}
+.lh2col .rbroundbox { width: 550px; margin-bottom: 10px;}
+.lh2col p  { padding: 0; margin: 3px 0 0 0;}
+
+.lh2col .rbcontentwrapClosed { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_l_1.gif) repeat-y; padding-bottom: 0px;}
+
+
+
+
+.lh2col .nshtop { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_t_1.gif) repeat-x; margin-top: 10px;}
+.lh2col .nshtop div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_tl_1.gif) no-repeat top left;}
+.lh2col .nshtop div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_tr_1.gif) no-repeat top right;}
+.lh2col .nshbot { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_b_1.gif) repeat-x;}
+.lh2col .nshbot div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_bl_1.gif) no-repeat top left;}
+.lh2col .nshbot div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_br_1.gif) no-repeat top right;}
+.lh2col .nshcontentwrap { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_l_1.gif) repeat-y;}
+.lh2col .nshcontent { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_r_1.gif) repeat-y right;}
+.lh2col .nshtop div, .lh2col .nshtop, .lh2col .nshbot div, .lh2col .nshbot {
+	width: 100%; height: 3px; font-size: 1px;}
+.lh2col .nshcontent  { padding: 5px 4px 20px 8px; margin: 0 0 0 3px; font-family: Arial; font-size: .73em; padding-bottom: 15px; background-color: #E7EFE3;}
+.lh2col .nshcontent td { margin: 0; padding: 0;}
+.lh2col .nshroundbox { width: 180px;}
+.lh2col .viewrt {width: 100%; text-align: right; font-size: 10px; padding-bottom: 3px;}
+.lh2col p  { padding: 0; margin: 10px 0 0 0;}
+
+
+
+
+.rh1col .rbtop { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/help_t.gif) repeat-x;}
+.rh1col .rbtop div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_tl_1.gif) no-repeat top left;}
+.rh1col .rbtop div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_tr_1.gif) no-repeat top right;}
+.rh1col .rbbot { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_b_1.gif) repeat-x; margin-bottom: 10px;}
+.rh1col .rbbot div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_bl_1.gif) no-repeat top left;}
+.rh1col .rbbot div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_br_1.gif) no-repeat top right;}
+.rh1col .rbcontentwrap { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_l_1.gif) repeat-y;}
+.rh1col .rbcontent { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_help_r_1.gif) repeat-y right;}
+.rh1col .rbcontent img { margin: 3px 0 10px 0;}
+.rh1col .rbtop div, .rh1col .rbtop, .rh1col .rbbot div, .rh1col .rbbot {
+	width: 100%; height: 3px; font-size: 1px;}
+.rh1col .rbcontent  { padding: 5px 12px 0 8px; margin: 0 0 0 3px; font-family: Arial; font-size: .83em; padding-bottom: 15px; background-color: #F0F0F0;}
+.rh1col .rbroundbox { width: 180px;}
+.rh1col .viewrt {width: 100%; text-align: right; font-size: 10px; padding-bottom: 3px;}
+.rh1col p  { padding: 0; margin: 10px 0 0 0;}
+
+
+
+#whcptabs {
+	float:left;
+	border-bottom: 1px solid #337EB7;
+	font-family: Verdana;
+	font-size: 10px;
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 10px
+}
+#whcptabs ul {
+	margin: 0;
+	padding: 0;
+	bottom: -1px;
+	left: 20px;
+	display: inline;
+	list-style: none;
+	width: 45em;
+}
+#whcptabs li {
+	display: inline;
+	list-style: none;
+}
+#whcptabs li.selected {
+	margin: 0 4px 0 0;
+	font-weight: bold;
+	color: #337EB7;
+}
+#whcptabs a {
+	display: block;
+	float: left;
+	padding: 3px 10px 4px 10px;
+	margin-top: 3px;
+	margin-right: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0055A3;
+	background-color: #DEEFFF;
+	border-bottom: none;
+	border-top: 1px solid #337EB7;
+	border-left: 1px solid #337EB7;
+	border-right: 1px solid #337EB7;
+}
+#whcptabs span a {
+	font-family: Verdana;
+	color: #0000FF;
+	font-weight: normal;
+	border: 0 solid #FFF;
+	background-color: #FFF;
+	font-size: 10px;
+	text-decoration: underline;
+}
+#whcptabs a.selected {
+	float: left;
+	display: block;
+	padding: 4px 13px 6px 10px;
+	font-weight: bold;
+	color: #FFF;
+	border-top: 1px solid #FFF;
+	border-left: 0px;
+	border-right: 1px solid #FFF;
+	background: url('http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_shad_1.gif') no-repeat right;
+	margin-top: 0;
+	margin-right: 2px;
+	background-color: #337EB7;
+}
+#whcptabs a:hover {
+	text-decoration: underline;
+}
+.triclr {
+	clear: both;
+	margin: 0 0 -10px 0;
+	padding: 0;
+	width: 45em;
+}
+
+#triclr_home {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 33px 0px;
+}
+#triclr_create {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 121px 0px;
+}
+#triclr_manage {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 218px 0px;
+}
+#triclr_promote {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 288px 0px;
+}
+#triclr_help {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 353px 0px;
+}
+#triclr_index {
+        background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/tab_arw_1.gif) no-repeat 408px 0px;
+}
+
+#ysbcnv a {
+	font-family: Arial;
+	font-size: .73em;
+}
+#sbctop {
+	margin-bottom: 10px;	
+}
+
+
+.alert {
+	color: #FF0000;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 8px;
+}
+
+#FTPsettings {
+	color: #000;
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+
+
+#vmsite {
+	position: relative;
+	top: 26px;
+	font-weight: normal;
+	margin-top: -15px;
+	text-decoration: underline;
+	font-family: Verdana;
+	color: #c8c8c8;
+	font-size: 10px;
+}
+
+#vmsite_pending {
+	position: relative;
+	top: 26px;
+	font-weight: normal;
+	margin-top: -15px;
+	color: #c8c8c8;
+}
+#vmsite_pending a {
+	text-decoration: underline;
+	font-family: Verdana;
+	color: #c8c8c8;
+	font-size: 10px;
+}
+#vmsite_pending span {
+	font-size: 10px;
+	font-family: Verdana;
+	color: #FF0000;
+}
+
+
+.WHOverview { float: left; width: 100%; margin: 0; padding: 0; font-size: 10px; font-family: Verdana;}
+.WHOverview h2 { color: #61834C; font-weight: bold; font-size: 14px;}
+.WHOverview .whotop { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_t_1.gif) repeat-x; margin-top: 18px;}
+.WHOverview .whotop div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_tl_1.gif) no-repeat top left;}
+.WHOverview .whotop div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_tr_1.gif) no-repeat top right;}
+.WHOverview .whobot { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_b_1.gif) repeat-x;}
+.WHOverview .whobot div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_bl_1.gif) no-repeat top left;}
+.WHOverview .whobot div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_br_1.gif) no-repeat top right;}
+.WHOverview .whocontentwrap { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_l_1.gif) repeat-y;}
+.WHOverview .whocontent { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/ql_r_1.gif) repeat-y right;}
+.WHOverview .whotop div, .WHOverview .whotop, .WHOverview .whobot div, .WHOverview .whobot { width: 100%; height: 3px; font-size: 1px;}
+.WHOverview .whocontentLeft, .WHOverview .whocontentLeftOrient, .WHOverview .whocontentLeftOrientTop { width: 195px; padding: 0 0 15px 0; margin: 0 0 0 3px; font-family: Arial; font-size: 13px; background-color: #E7EFE3; color: #61834C;}
+.WHOverview .whocontentLeftOrient { padding: 5px 0 10px 0;}
+.WHOverview .whocontentLeftOrientTop { padding: 0 0 0 0; font-size: 8px;}
+.WHOverview .whocontentRight { float: right; width: 525px;}
+.WHOverview .whocontentRight h3 { padding: 11px 0 8px 0; font-size: 21px; font-family: Arial; color: #61834C;}
+.WHOverview .whocontentLeft a, .WHOverview .whocontentLeftOrient a { color: #61834C;}
+.WHOverview .whocontentSelected { width: 195px; padding: 3px 0 3px 8px; margin: 0 0 0 3px; background-color: #FFF; color: #DD7817; font-size: 13px; font-family: Arial; font-weight: bold;}
+.WHOverview .whocontentSelected p {margin: 0; padding: 0;}
+.WHOverview .whocontentLeft td { margin: 0; padding: 0;}
+.WHOverview .whoroundbox { width: 180px;}
+.WHOverview .viewrt {width: 100%; text-align: right; font-size: 10px; padding-bottom: 3px;}
+.WHOverview p  { padding: 10px 0 0 8px; margin: 0 0 0 0;}
+
+
+.textBubble { position: absolute;}
+.textBubble .rbtop { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_t_1.gif) repeat-x;}
+.textBubble .rbtop div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_tl_1.gif) no-repeat top left;}
+.textBubble .rbtop div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_tr_1.gif) no-repeat top right;}
+.textBubble .rbbot { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_b_2.gif) repeat-x;}
+.textBubble .rbbot div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_bl_1.gif) no-repeat top left;}
+.textBubble .rbbot div div { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_br_1.gif) no-repeat top right;}
+.textBubble .rbcontentwrap { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_l_1.gif) repeat-y; background-color: #FDFDEE;}
+.textBubble .rbcontent { background: url(http://us.i1.yimg.com/us.yimg.com/i/us/wh/el/whcp_r_2.gif) repeat-y right;}
+.textBubble .rbtop div, .textBubble .rbtop, .textBubble .rbbot div, .textBubble .rbbot { width: 100%; height: 4px; font-size: 1px;}
+.textBubble .rbtop div, .textBubble .rbtop { height: 2px;};
+.textBubble .rbcontent { margin: 0 0 0 3px;}
+.textBubble .rbcontent div { padding: 8px 20px 16px 13px; font-family: Arial; font-size: 13px;}
+.textBubble .rbcontent a { text-decoration: underline;}
+.textBubble .rbcontent a:hover { text-decoration: underline;}
+.textBubble .rbcontent h4 { padding; 0 5px 0 0; margin: 0 5px 0 0; color: #DD7817; display: inline; font-size: 13px; font-weight: bold; font-family: Arial;}
+.textBubble .rbroundbox { width: 100%; margin-bottom: 10px;}
+
+.lh1colL { float: left; margin-left: 0; width: 260px; padding: 1px;}
+.lh1colL .rbcontent  { padding: 0 12px 0 5px; margin: 0 0 0 3px; font-family: Arial; font-size: .83em; padding-bottom: 15px; background-color: #FFF;}
+.lh1colL .rbroundbox { width: 180px;}
+.lh1colL p  { padding: 0; margin: 10px 0 0 0;}
+.lh1colL ul { padding: 0 0 0 8px; margin: 0 0 0 8px;}
+
+
+.lh1colR { float: left; margin-left: 15px; width: 260px; padding: 1px;}
+.lh1colR .rbcontent  { padding: 0 12px 0 5px; margin: 0 0 0 3px; font-family: Arial; font-size: .83em; padding-bottom: 15px; background-color: #FFF;}
+.lh1colR .rbroundbox { width: 180px;}
+.lh1colR p  { padding: 0; margin: 10px 0 0 0;}
+.lh1colR ul { padding: 0 0 0 8px; margin: 0 0 0 8px;}
+
+.announcement { padding-left: 5px; padding-top:10px;}
+.announcement a { font-size: 10px; color: #FF0000; font-weight: bold; font-family: Verdana; }
+.announcement img { margin-top: 0; }
+.announcement div { padding-left: 5px;}
+</style>
+
+<title>Yahoo! GeoCities</title>
+<style type="text/css"><!--
+.whBtn {
+background-color: BCD8FA;
+color: 000000;
+font-size: 9pt;
+font-family: arial;
+}    
+--></style> 
+
+
+
+</head>
+<body
+bgcolor="D2691E"
+>
+<center>
+
+<table width=600 cellpadding=3 cellspacing=0 border=0>
+<tr>
+<td align=center>
+<table cellpadding=1 cellspacing=0 border=0 width=468 bgcolor=cccccc>
+<tr>
+<td>
+<table bgcolor=ffffff cellpadding=2 cellspacing=0 border=0 width=100%>
+<tr>
+<td width="1%"><a href="http://geocities.yahoo.com/">
+<img src="http://pic.geocities.com/us/i/geo/ao/y_geo.gif" alt="Yahoo! GeoCities" width=160 height=20 border=0></a></td>
+<td><font face=arial size=+1 color=003366><b>Guestbook</b></font></td>
+<td align=right width="1%"><font face=arial size=-1><a href="http://geocities.yahoo.com/reg">Join</a></font>&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+</table><br>
+<p>
+
+<table width=600 cellspacing=0 cellpadding=2 border=0>
+
+<tr><td>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;JJ
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;Primetyme195@gmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;This was my favorite show when i was growing up. I was a little bit too young to be on the show but me and my friends would string yarn throughout one room to recreate one of the rooms from the temple... it was fun...thatnks for making this site
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Shakir
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;theglovemb@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Orange Iguanas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I was on GUTS once, I came in last to the Cheetah, and some girl the named Marauder. Were you on legends of the hidden temple? or just a huge fan?
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Tim
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Green Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Me and my friends love Legends still and we are all 17 and 18 years old! We have created a fantasy league between us so it gets pretty intense.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Tia
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;tpav126862001@yahoo.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;N/A
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;I couldnt decide between one
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;This is my favorite Nickelodeon show of all time!!! I remember watching the show at my grandmas house.I also watch reruns on Nick Gas as well. Ive been looking for a complete episode guide for a LONG LONG time,so I was extremely happy to find this fan sit
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Ferdinand
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;skoot
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;silver snakes!!!!
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I thought I was the biggest fan of this show and the most pathetic example of a human being woh ever lived. then i found this page.....
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Tyler
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;RandyM54atComcast.net
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue Barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I love this show alot
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;maddy
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Gray
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Yeah. This website is silly and funny. Good show. It amazes me that someone would take so much time to do this... to MAP out the temple? Wow.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Ctd. the girl was faster than the boy. Another thing i noticed was when olmec lowered the gate he made an awesome gruting sound that lasted like 10 seconds :). It was like oooooooouuaaaaaaahhhhhhh. lol well talk to ya soon
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;gomntwins@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;(none)
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;blue
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Im back! its been a while since ive been on and aaron has been taking over the bluebarracudas123 site very nicely. I would just like to say that i saw the jewel encrusted egg of cathrine today also and that was a great episode because the girl was faster 
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Amber
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;sportacusgirl@yahoo.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I only watched Legends of the Hidden Temple because of Kirk Fogg. Oh my god I was so in love with him and I still am even though it has been years since I seen Legends of the Hidden Temple. I really miss watching Kirk Fogg. I thought that I was the only o
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Drek
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;gizmosloth@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;depends
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;This is a great show that was always fun to watch. It has been awhile since I seen another show like it. Nickelodean just isnt what it used to be. But then again everything isnt what it used to be.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Jake
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;Uberjake14@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Your site is the BOMB!!!!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Kirk
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;Crazygopher4@yahoo.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue Barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Soy el barracuda azul!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;emily
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;camiellebarry.comast.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;egeb
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;sliversnakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;hi i am from nashua nh i never got to be on a game show like globel guts i have to things that i do are good sports to keep you healthly are karate and dance
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Alex
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;the_cool_dude89@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;http://www.alexpychtin.com/
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue Barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Legends of the Hidden Temple is the greatest show of all time! Ive spent the past couple of years trying to remember the name of the show and now that I do, now that Ive found this incredible website, now that I can reminisce and find a way to get all the
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Silver Steve
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Da Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;That new life on Legends was incredible. It made me pissed tho cause it made me realize that i could never be on the show and I always wanted to be on it. G2G legends is on!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Mike P
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Awesome website. Im a huge Legends fan and browsing this page brought me back to the good old days of Nick.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Legends of the Hidden Temple is definitely the greatest nick show of all time!! I cannot get enough of it, I wish it was on regular cable! Temple runs rock!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Brennen
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;Brennen854@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;Noggin
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Purple Parrotts
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I like legends because of the status of the game. Most game shows on nick are just a waste of time. I really like the moat. But everybody loves the temple. Why did it cancel it was such a great show.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Paul
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;pasack22@msn.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silve Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Thanks for doing this is. This was truly the best show on tv thanks for putiing the time into this.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Andrew
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;Find it on the site!
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.geocities.com/olmec929
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;silver snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I Have A Website!!!!!
+I finished A Legends website. go look!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Silver Snake Steve
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes The Yankees of Legends
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Today I watched the Legend of the 1st Golden Ship and it was indeed hilarious as your summary said. That girl was trying and trying and couldnt find the wig and Kirk was just playing it off like an idiot as usual. I have several questions, like did they r
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Natasha
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;earlene40701@yahoo.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Purple Parrots
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;The reason that I like the Purple Parrots is because I think their great getting through the whole thing sometimes and Kirk is great too.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Andrew
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;blank!!!!!!!!!!!
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;wwww.geocities.com/olmec929/
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;silver snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;This is the best site in existence!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Michael
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Red Jaguars
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I want to play on the show on my b-day.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;gomntwins@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.geocities.com/bluebarracudas123/The_choice
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;blue barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;After a long quest for a new owner of Bluebarracudas123 site, i have found a person who is willing to take over. Aaron P. emailed me in intrest of the site, please visit the site regularly and watch his progress, thank you again Aaron!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Chris
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.geocities.com/lotht2001
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Green Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I have returned! I am the one who started it all with my site. I thank Ed for picking up the ball where I left it. Ill help out when I can to make this site even better.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;dasgfysardfer
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;dgajtfgjnmsf@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;jdghngfkj
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;blue
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;how can i sign up
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe (continued)
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;(cont.d) The part where you explain how gooburs web page is down, that side note, its a bit harsh on the eyes :). Thanks again for manking such a great web site (and a great game!) and good luck in the future.
+Joe (bluebarracudas123)
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;startingpitcher08@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.geocities.com/bluebarracudas123/The_choice
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue Barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I have to say quite a lot has been accomplished on this site since ive been gone. It is a shame to see Nickelodeon go after all these years but in time everything must move on. One quick coment on your other legends web sites the part where you explain wh
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Chad
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;www.chadhemstalk@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Orange Iguanas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Great show. I watched as much as I could when I was a kid.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;What a show
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;legendsrocks
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;blue barracuda
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;this was my favorite show growing up. i always got so mad when the teams lost. the second player never seemed to notice that the doors had been unlocked. i just realized that it is being replayed. and my girlfriend and me watch this show now on GAS...yeah
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;TAVON
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;MILL4TAI
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;PURPLE PAROITS
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;YES IS YALL EVER COME BACK ON THE AIR YALL SHOULD I LOVE THAT SHOW I WANT TO BE ON IT
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Mike
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;MichaelWilson@creighton.edu
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Green Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Most comprehensive LOTHT site there is. God bless this show.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;alesha
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;cool_monkey07@yahoo.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;OMG!! I loved this show! I wish it was still on!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;jairo camacho
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;jairothemexi@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;jairojairojairo
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;ur the man! i love this game so much and i want to play it with u sometime.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Robert
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Great site, great show.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Ryan
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I saw so many episodes of this show...did anyone actually EVER win? I dont remember anyone making it back out of the temple within time.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Nick
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I think you should add a message board
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;(Continued)
+thanks
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Joe
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;startingpitcher08@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.geocities.com/bluebarracudas123/The_choice
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;If you visited my site recently, there hasnt been many updates. My computer has been bombarded with viruses so i will not be using geocities any longer. If any legends fan would like to continue my site please email me so i will give you my password. Than
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Beau
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;z28guy00@aol.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Snakes
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Great site! Took me back to my childhood days of watching Legends on Nick. Thanks!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Jacob
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;N/A
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;None
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Happy birthday!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Lori
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Silver Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;You are awesome! Your dedication and the level of detail you show is unbelievable!!! Congrats on your hard work. Looks great.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Max
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;I tried playing this game at my friends it was pretty cool, but WE WANT MAC SUPPORT!!! IT CANT BE THAT HARD! what progrm are u using now? try using a different ok? ok.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;A.F.
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Green Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;On the first Saturday of Sept, Nickeloden GAS, is going to make a full hour version of the egends of the Hidden Temple. To save money, Olmec is going to the host himself. The game is still follows the old path:
+
+1. Moat
+2. Steps of Knowedgle
+3. Temple
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Dr. Thinker
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Hi! Nice page.
+
+Signed by,
+Dr. Thinker
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Jenn
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;sinmylove@msn.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.bonafidehype.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Purple Parrots
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Legends is on 3 times a day here and everytime its on.. I always come here to see if the team makes it or not. Legends is my all time favorite show and I cant wait to see updates you add in the future.
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Andrew
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;kansasstatedomin8@gmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;www.jasonleffler.tk
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Blue Barracudas
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Great site. Keep up the great work!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+<table border=0>
+<tr><td>
+<font face=arial color="#000000">
+<b>First Name :</b> &nbsp;&nbsp;Jeremy
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>E-mail :</b> &nbsp;&nbsp;lakerfannumberone@hotmail.com
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>URL :</b> &nbsp;&nbsp;
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Favorite Team :</b> &nbsp;&nbsp;Green Monkeys
+</font>
+</td></tr> 
+<tr><td>
+<font face=arial color="#000000">
+<b>Comments :</b> &nbsp;&nbsp;Incredible site! The temple run is great(could be better though), and the episode guide is VERY informative. I dont get Nick GAS where I live, so this is how I get information. Great job! Keep up the good work!
+</font>
+</td></tr> 
+<tr><td>
+<img src="http://pic.geocities.com/us/i/geo/ao/hr3.gif">
+</td></tr>
+</table>
+</td></tr>
+
+
+<tr><td>
+<font face=arial color="#000000">
+&nbsp;&nbsp;
+</font>
+</td></tr>
+<tr><td><center>
+<font face=arial color="#000000">
+<a href="http://geocities.yahoo.com/reg">
+Build your own website</a>&nbsp;|&nbsp;<a href="http://geocities.yahoo.com/">Yahoo! GeoCities</a><br><br>
+</font>
+</center>
+</td></tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+</center>
+<font size=1 face="arial">
+<br>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1984727; 
+var sc_invisible=0; 
+var sc_partition=18; 
+var sc_security="6f55f429"; 
+var sc_text=2; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c19.statcounter.com/counter.php?sc_project=1984727&java=0&security=6f55f429&invisible=0" alt="counter statistics" border="0"></a> </noscript>
+<!-- End of StatCounter Code --><br><a href="http://my.statcounter.com/project/standard/stats.php?project_id=1984727&guest=1"></a>
+</font>
+</body>
+</html>

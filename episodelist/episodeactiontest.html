@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+        <title>Episode Table Test Page</title>
+
+<style type="text/css">
+@import url(http://nicklegends.elfractal.com/styleguide.css);
+</style>
+
+<script language="JavaScript" src="http://nicklegends.elfractal.com/episodelist/episodeaction.js">
+</script>
+
+</head>
+
+<body>
+Notice: You're entering a "cross your fingers" zone. Proceed with caution.
+<hr>
+
+<script type="text/javascript">
+/*MANUAL----------------------------------------------------------------------
+-name: the name of the episode, not necessarily the artifact.
+-shortName: a short version of the artifact name, used for accessing pictures.
+-number: the episode number of the episode from 1-120 (NOT production code).
+-letter: the production code letter; leave blank if unknown.
+-season: numerical representation of season (1, 2, or 3).
+-layout: numerical representation of layout WITHIN season (1-9).
+-artifactRoom: the name of the room in which the artifact is held.
+-rjMoatPerformance: how the Jaguars did in the Moat ("1st"-"4th", or "DNQ").
+  *If team tied for that position, place "T" before place.
+  *If special judgment passed on team, put "*" after performance, like "4th*"
+   or "DNQ*." Use this only for spotters' errors.
+-bbMoatPerformance: how the Barracudas did in the Moat (read notes above).
+-gmMoatPerformance: how the Monkeys did in the Moat (read notes above).
+-oiMoatPerformance: how the Iguanas did in the Moat (read notes above).
+-ppMoatPerformance: how the Parrots did in the Moat (read notes above).
+-ssMoatPerformance: how the Snakes did in the Moat (read notes above).
+-moatPic1Num: the numeral at the end of the first Moat picture's URL.
+  For example, if the picture desired was "moat3.jpg," enter "3."
+-moatPic2Num:the numeral ending the second Moat picture's URL(read notes above).
+-moatPic3Num: the numeral ending the third Moat picture's URL(read notes above).
+-moatSummary: the full summary of the Moat round.
+-stepsTeam1: the initials of the team at the far left of the Steps ("rr"-"gm").
+-stepsTeam2: the initials of the team second from the left ("bb"-"oi").
+-stepsTeam3: the initials of the team second from the right ("gm"-"pp").
+-stepsTeam4: the initials of the team at the far right of the Steps ("oi"-"ss").
+-team1StepsPerformance:how first team did on Steps ("1st," "2nd," "0-2 correct")
+  *If team swept another, add "(Sweep)," like "1st (Sweep)."
+-team2StepsPerformance: how the second team did on the Steps (read notes above).
+-team3StepsPerformance: how the third team did on the Steps (read notes above).
+-team4StepsPerformance: how the fourth team did on the Steps (read notes above).
+
+*/
+
+
+name = "The Lost Willpower of Nicklegends";
+shortName = "Lost Willpower";
+number = 119;
+letter = "Y";
+season = 3;
+layout = 5;
+artifactRoom = "The Bottomless Pit";
+rjMoatPerformance = "3rd";
+bbMoatPerformance = "DNQ";
+gmMoatPerformance = "4th*";
+oiMoatPerformance = "1st";
+ppMoatPerformance = "2nd";
+ssMoatPerformance = "DNQ*";
+moatPic1Num = 1;
+moatPic2Num = 3;
+moatPic3Num = 4;
+moatSummary = "In this Moat round, the teams had to cross by jumping between giant \"lily pad\" floats that were in the water. Even though it was over in a flash, it was an exciting round to watch. The Silver Snakes replaced the Green Monkeys because a player on the Monkeys continued to cross even though he was hold to go back.";
+stepsTeam1 = "rj";
+stepsTeam2 = "oi";
+stepsTeam3 = "pp";
+stepsTeam4 = "ss";
+team1StepsPerformance = "2nd";
+team2StepsPerformance = "2 correct";
+team3StepsPerformance = "0 correct";
+team4StepsPerformance = "1st";
+legendPicNum = 1;
+stepsPic2Num = 1;
+stepsPic3Num = 2;
+stepsLegend = "Legend would go here...";
+stepsSummary = "It was a pretty average Steps of Knowledge. The Iguanas made a good comeback after the Jaguars and Snakes had two correct answers apiece, but couldn\'t quite come through.";
+gamesTeam1 = "rj";
+team1GirlName = "Paris";
+team1BoyName = "Jake";
+team1Pendants = "1";
+team1Game1Performance = "Won";
+team1Game2Performance = "Lost";
+team1Game3Performance = "Tied";
+gamesTeam2 = "ss";
+team2GirlName = "Anu";
+team2BoyName = "Matt";
+team2Pendants = "1";
+gamesPic1Num = 1;
+gamesPic2Num = 2;
+gamesPic3Num = 3;
+gamesSummary = "The Games were blah blah blah (I don\'t want to waste my time programming making up an imaginary Temple Games scenario.)";
+  //NOTE: Don't worry about the values below if there was no tiebreaker.
+team1BreakerPerformance = "Won";
+breakerPic1Num = 1;
+breakerPic2Num = 2;
+breakerPic3Num = 3;
+breakerQuestion = "What is the color of the sky?";
+breakerSummary = "This was the Tiebreaker question, and boy, was it easy! The Jaguars rung in first and got it, no problem.";
+teamTemple = "rj";
+templeOutcome = "Won";
+timeLeft = "1:02";
+templePic1Num = 1;
+templePic2Num = 2;
+templePic3Num = 3;
+guardLocations = "None";
+halfPendantLocation = "None";
+roomsEntered = 7;
+summaryArray = new Array ("Nicklegends", "This was the best episode ever.", "Der Kommissar", "This was the worst episode ever.");
+
+var testEp = new Episode(name, shortName, number, letter, season, layout, artifactRoom, rjMoatPerformance, bbMoatPerformance, gmMoatPerformance, oiMoatPerformance, ppMoatPerformance, ssMoatPerformance, moatPic1Num, moatPic2Num, moatPic3Num, moatSummary, stepsTeam1, stepsTeam2, stepsTeam3, stepsTeam4, team1StepsPerformance, team2StepsPerformance, team3StepsPerformance, team4StepsPerformance, stepsLegend, stepsSummary, gamesTeam1, team1GirlName, team1BoyName, team1Pendants, team1Game1Performance, team1Game2Performance, team1Game3Performance, gamesTeam2, team2GirlName, team2BoyName, team2Pendants, gamesPic1Num, gamesPic2Num, gamesPic3Num, gamesSummary, team1BreakerPerformance, breakerPic1Num, breakerPic2Num, breakerPic3Num, breakerQuestion, breakerSummary, teamTemple, templeOutcome, timeLeft, templePic1Num, templePic2Num, templePic3Num, roomsEntered, guardLocations, halfPendantLocation, summaryArray);
+
+document.write(testEp.getCode());
+</script>
+
+
+
+<!-- Start of StatCounter Code | NOTE: Current code.-->
+<div class="counterleft">
+<script type="text/javascript" language="javascript">
+var sc_project=1984727; 
+var sc_invisible=0; 
+var sc_partition=18; 
+var sc_security="6f55f429"; 
+var sc_text=2; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c19.statcounter.com/counter.php?sc_project=1984727&java=0&security=6f55f429&invisible=0" alt="counter statistics" border="0"></a> </noscript>
+</div>
+<!-- End of StatCounter Code -->
+
+
+</body>
+</html>

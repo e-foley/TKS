@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+        <title>Nicklegends' Advanced Statistics Code Generator</title>
+
+<style type="text/css">
+
+body {font-family: arial;}
+table {font-size: 18;}
+.sider {background-color: #888888;}
+.red {background-color: #FF8888; font-size: 12;}
+.blue {background-color: #8888FF; font-size: 12;}
+.green {background-color: #80DD80; font-size: 12;}
+.orange {background-color: #FFC088; font-size: 12;}
+.purple {background-color: #DD70DD; font-size: 12;}
+.silver {background-color: #AAAAAA; font-size: 12;}
+
+</style>
+
+<script type="text/javascript">
+
+function getValue(thisradio) {
+for (i=thisradio.length-1; i > -1; i--) {
+if (thisradio[i].checked) {
+return thisradio[i].value;
+}
+}
+}
+
+function getStyle(){
+styleText = "<style type='text/css'>\n.statstable {background-color: #888888; font-size: 11; font-family: arial;}\n.red {background-color: #FF8888;}\n.blue {background-color: #8888FF;}\n.green {background-color: #80DD80;}\n.orange {background-color: #FFC088;}\n.purple {background-color: #DD70DD;}\n.silver {background-color: #AAAAAA;}\n.blank {background-color: #888888;}\n</style>\n\n";
+return styleText;
+}
+
+function getHeader(){
+headerText = "</td></tr><tr><td valign=top colspan=2><b>Advanced Statistics:</b> (Bob Maibaum)<table border=1 width=100% cellpadding=0 cellspacing=1 class='statstable'><tr height=20><td width=14%>Rounds/Teams</td><td width=14% class='red'>Red Jaguars</td><td width=14% class='blue'>Blue Barracudas</td><td width=14% class='green'>Green Monkeys</td><td width=14% class='orange'>Orange Iguanas</td><td width=14% class='purple'>Purple Parrots</td><td width=14% class='silver'>Silver Snakes</td></tr>";
+return headerText;
+}
+
+function getMoat(){
+moatText = "<tr height=20><td>Moat</td>";
+
+moatText += "<td class='red'>";
+rjmoat = getValue(document.form1.rjmoat);
+////////////////////////////////////////
+if (rjmoattie == true) moatText += "T";
+if (rjmoat == "DNQ") moatText += rjmoat;
+else moatText += ("<b>" + rjmoat + "</b>");
+
+moatText += "</td><td class='blue'>";
+bbmoat = getValue(document.form1.bbmoat);
+if (bbmoat == "DNQ") moatText += bbmoat;
+else moatText += ("<b>" + bbmoat + "</b>");
+
+moatText += "</td><td class='green'>";
+gmmoat = getValue(document.form1.gmmoat);
+if (gmmoat == "DNQ") moatText += gmmoat;
+else moatText += ("<b>" + gmmoat + "</b>");
+
+moatText += "</td><td class='orange'>";
+oimoat = getValue(document.form1.oimoat);
+if (oimoat == "DNQ") moatText += oimoat;
+else moatText += ("<b>" + oimoat + "</b>");
+
+moatText += "</td><td class='purple'>";
+ppmoat = getValue(document.form1.ppmoat);
+if (ppmoat == "DNQ") moatText += ppmoat;
+else moatText += ("<b>" + ppmoat + "</b>");
+
+moatText += "</td><td class='silver'>";
+ssmoat = getValue(document.form1.ssmoat);
+if (ssmoat == "DNQ") moatText += ssmoat;
+else moatText += ("<b>" + ssmoat + "</b>");
+
+moatText += "</td></tr>";
+return moatText;
+}
+////////////////////////////////////////////////////////
+function getSteps(){
+
+stepsText = "<tr height=20><td>Steps</td>";
+
+rjsteps = getValue(document.form1.rjsteps);
+if (rjsteps == "NA") stepsText += "<td class='blank'>";
+else {
+  stepsText += "<td class='red'>";
+  if (rjsteps == "1st" || rjsteps == "2nd")
+     stepsText += ("<b>" + rjsteps + "</b>");
+  else stepsText += rjsteps;
+}
+
+bbsteps = getValue(document.form1.bbsteps);
+if (bbsteps == "NA") stepsText += "</td><td class='blank'>";
+else {
+  stepsText += "</td><td class='blue'>";
+  if (bbsteps == "1st" || bbsteps == "2nd")
+     stepsText += ("<b>" + bbsteps + "</b>");
+  else stepsText += bbsteps;
+}
+
+gmsteps = getValue(document.form1.gmsteps);
+if (gmsteps == "NA") stepsText += "</td><td class='blank'>";
+else {
+  stepsText += "</td><td class='green'>";
+  if (gmsteps == "1st" || gmsteps == "2nd")
+     stepsText += ("<b>" + gmsteps + "</b>");
+  else stepsText += gmsteps;
+}
+
+oisteps = getValue(document.form1.oisteps);
+if (oisteps == "NA") stepsText += "</td><td class='blank'>";
+else {
+  stepsText += "</td><td class='orange'>";
+  if (oisteps == "1st" || oisteps == "2nd")
+     stepsText += ("<b>" + oisteps + "</b>");
+  else stepsText += oisteps;
+}
+
+ppsteps = getValue(document.form1.ppsteps);
+if (ppsteps == "NA") stepsText += "</td><td class='blank'>";
+else {
+  stepsText += "</td><td class='purple'>";
+  if (ppsteps == "1st" || ppsteps == "2nd")
+     stepsText += ("<b>" + ppsteps + "</b>");
+  else stepsText += ppsteps;
+}
+
+sssteps = getValue(document.form1.sssteps);
+if (sssteps == "NA") stepsText += "</td><td class='blank'>";
+else {
+  stepsText += "</td><td class='silver'>";
+  if (sssteps == "1st" || sssteps == "2nd")
+     stepsText += ("<b>" + sssteps + "</b>");
+  else stepsText += sssteps;
+}
+
+stepsText += "</td></tr>";
+
+return stepsText;
+}
+//////////////////////////////////////////////////
+
+function getGames(){
+
+gamesText = "<tr height=20><td>Games</td>";
+
+rjgamesgo = getValue(document.form1.rjgamesgo);
+rjgames = getValue(document.form1.rjgames);
+if (rjgames == "NA") gamesText += "<td class='blank'>";
+else { 
+   gamesText += "<td class='red'>";
+   if (rjgamesgo == 0) gamesText += "<b>";
+      gamesText += rjgames;
+   if (rjgamesgo == 0) gamesText += "</b>";
+}
+
+/*bbgamesgo = document.form1.bbgamesgo;
+bbgames = getValue(document.form1.bbgames);
+if (bbgames == "NA") gamesText += "</td><td class='blank'>";
+else gamesText += "</td><td class='blue'>";
+if (bbgamesgo) gamesText += "<b>";
+gamesText += bbgames;
+if (bbamesgo) gamesText += "</b>";*/
+
+return gamesText;
+}
+
+function getCode(){
+
+totalText = "";
+
+totalText += getStyle();
+totalText += getHeader();
+totalText += getMoat();
+totalText += getSteps();
+totalText += getGames();
+totalText += "</table>";
+
+return totalText;
+
+}
+</script>
+</head>
+
+<body>
+
+<center><h1>Nicklegends' Fantastic Advanced Statistics Code Generator</h1></center>
+
+
+<form name="form1">
+<p align=center>
+<font face="arial">
+<table border=1>
+
+<tr><td class="sider">Teams/Rounds</td>
+<td class="red">Red Jaguars</td>
+<td class="blue">Blue Barracudas</td>
+<td class="green">Green Monkeys</td>
+<td class="orange">Orange Iguanas</td>
+<td class="purple">Purple Parrots</td>
+<td class="silver">Silver Snakes</td>
+
+</tr><td class="sider">The Moat</td>
+<td class="red">
+<input type="radio" name="rjmoat" value="1st">1st<br>
+<input type="radio" name="rjmoat" value="2nd">2nd<br>
+<input type="radio" name="rjmoat" value="3rd">3rd<br>
+<input type="radio" name="rjmoat" value="4th">4th<br>
+<input type="radio" name="rjmoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="rjmoattie">Tie
+</td>
+
+<td class="blue">
+<input type="radio" name="bbmoat" value="1st">1st<br>
+<input type="radio" name="bbmoat" value="2nd">2nd<br>
+<input type="radio" name="bbmoat" value="3rd">3rd<br>
+<input type="radio" name="bbmoat" value="4th">4th<br>
+<input type="radio" name="bbmoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="bbmoattie">Tie
+</td>
+
+<td class="green">
+<input type="radio" name="gmmoat" value="1st">1st<br>
+<input type="radio" name="gmmoat" value="2nd">2nd<br>
+<input type="radio" name="gmmoat" value="3rd">3rd<br>
+<input type="radio" name="gmmoat" value="4th">4th<br>
+<input type="radio" name="gmmoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="gmmoattie">Tie
+</td>
+
+<td class="orange">
+<input type="radio" name="oimoat" value="1st">1st<br>
+<input type="radio" name="oimoat" value="2nd">2nd<br>
+<input type="radio" name="oimoat" value="3rd">3rd<br>
+<input type="radio" name="oimoat" value="4th">4th<br>
+<input type="radio" name="oimoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="oimoattie">Tie
+</td>
+
+<td class="purple">
+<input type="radio" name="ppmoat" value="1st">1st<br>
+<input type="radio" name="ppmoat" value="2nd">2nd<br>
+<input type="radio" name="ppmoat" value="3rd">3rd<br>
+<input type="radio" name="ppmoat" value="4th">4th<br>
+<input type="radio" name="ppmoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="ppmoattie">Tie
+</td>
+
+<td class="silver">
+<input type="radio" name="ssmoat" value="1st">1st<br>
+<input type="radio" name="ssmoat" value="2nd">2nd<br>
+<input type="radio" name="ssmoat" value="3rd">3rd<br>
+<input type="radio" name="ssmoat" value="4th">4th<br>
+<input type="radio" name="ssmoat" value="DNQ" checked>DNQ<br>
+<input type="checkbox" name="ssmoattie">Tie
+</td>
+
+</tr><tr>
+<!--------------------------------------------------------------->
+
+<td class="sider">The Steps of Knowledge</td>
+<td class="red">
+<input type="radio" name="rjsteps" value="1st">1st<br>
+<input type="radio" name="rjsteps" value="2nd">2nd<br>
+<input type="radio" name="rjsteps" value="2 correct">2 correct<br>
+<input type="radio" name="rjsteps" value="1 correct">1 correct<br>
+<input type="radio" name="rjsteps" value="0 correct">0 correct<br>
+<input type="radio" name="rjsteps" value="NA" checked>NA
+</td>
+
+<td class="blue">
+<input type="radio" name="bbsteps" value="1st">1st<br>
+<input type="radio" name="bbsteps" value="2nd">2nd<br>
+<input type="radio" name="bbsteps" value="2 correct">2 correct<br>
+<input type="radio" name="bbsteps" value="1 correct">1 correct<br>
+<input type="radio" name="bbsteps" value="0 correct">0 correct<br>
+<input type="radio" name="bbsteps" value="NA" checked>NA
+</td>
+
+<td class="green">
+<input type="radio" name="gmsteps" value="1st">1st<br>
+<input type="radio" name="gmsteps" value="2nd">2nd<br>
+<input type="radio" name="gmsteps" value="2 correct">2 correct<br>
+<input type="radio" name="gmsteps" value="1 correct">1 correct<br>
+<input type="radio" name="gmsteps" value="0 correct">0 correct<br>
+<input type="radio" name="gmsteps" value="NA" checked>NA
+</td>
+
+<td class="orange">
+<input type="radio" name="oisteps" value="1st">1st<br>
+<input type="radio" name="oisteps" value="2nd">2nd<br>
+<input type="radio" name="oisteps" value="2 correct">2 correct<br>
+<input type="radio" name="oisteps" value="1 correct">1 correct<br>
+<input type="radio" name="oisteps" value="0 correct">0 correct<br>
+<input type="radio" name="oisteps" value="NA" checked>NA
+</td>
+
+<td class="purple">
+<input type="radio" name="ppsteps" value="1st">1st<br>
+<input type="radio" name="ppsteps" value="2nd">2nd<br>
+<input type="radio" name="ppsteps" value="2 correct">2 correct<br>
+<input type="radio" name="ppsteps" value="1 correct">1 correct<br>
+<input type="radio" name="ppsteps" value="0 correct">0 correct<br>
+<input type="radio" name="ppsteps" value="NA" checked>NA
+</td>
+
+<td class="silver">
+<input type="radio" name="sssteps" value="1st">1st<br>
+<input type="radio" name="sssteps" value="2nd">2nd<br>
+<input type="radio" name="sssteps" value="2 correct">2 correct<br>
+<input type="radio" name="sssteps" value="1 correct">1 correct<br>
+<input type="radio" name="sssteps" value="0 correct">0 correct<br>
+<input type="radio" name="sssteps" value="NA" checked>NA
+</td>
+
+</tr><tr>
+<!--------------------------------------------------->
+
+<td class="sider">The Temple Games</td>
+<td class="red">
+<input type="radio" name="rjgames" value="2 pendants">2 pendants<br>
+<input type="radio" name="rjgames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="rjgames" value="1 pendant">1 pendant<br>
+<input type="radio" name="rjgames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="rjgames" value="0 pendants">0 pendants<br>
+<input type="radio" name="rjgames" value="NA" checked>NA<br>
+<input type="checkbox" name="rjgamesgo">Advance
+</td>
+
+<td class="blue">
+<input type="radio" name="bbgames" value="2 pendants">2 pendants<br>
+<input type="radio" name="bbgames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="bbgames" value="1 pendant">1 pendant<br>
+<input type="radio" name="bbgames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="bbgames" value="0 pendants">0 pendants<br>
+<input type="radio" name="bbgames" value="NA" checked>NA<br>
+<input type="checkbox" name="bbgamesgo">Advance
+</td>
+
+<td class="green">
+<input type="radio" name="gmgames" value="2 pendants">2 pendants<br>
+<input type="radio" name="gmames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="gmgames" value="1 pendant">1 pendant<br>
+<input type="radio" name="gmgames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="gmgames" value="0 pendants">0 pendants<br>
+<input type="radio" name="gmgames" value="NA" checked>NA<br>
+<input type="checkbox" name="gmgamesgo">Advance
+</td>
+
+<td class="orange">
+<input type="radio" name="oigames" value="2 pendants">2 pendants<br>
+<input type="radio" name="oigames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="oigames" value="1 pendant">1 pendant<br>
+<input type="radio" name="oigames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="oigames" value="0 pendants">0 pendants<br>
+<input type="radio" name="oigames" value="NA" checked>NA<br>
+<input type="checkbox" name="oigamesgo">Advance
+</td>
+
+<td class="purple">
+<input type="radio" name="ppgames" value="2 pendants">2 pendants<br>
+<input type="radio" name="ppgames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="ppgames" value="1 pendant">1 pendant<br>
+<input type="radio" name="ppgames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="ppgames" value="0 pendants">0 pendants<br>
+<input type="radio" name="ppgames" value="NA" checked>NA<br>
+<input type="checkbox" name="ppgamesgo">Advance
+</td>
+
+<td class="silver">
+<input type="radio" name="ssgames" value="2 pendants">2 pendants<br>
+<input type="radio" name="ssgames" value="1 1/2 pendants">1 1/2 pendants<br>
+<input type="radio" name="ssgames" value="1 pendant">1 pendant<br>
+<input type="radio" name="ssgames" value="1/2 pendant">1/2 pendant<br>
+<input type="radio" name="ssgames" value="0 pendants">0 pendants<br>
+<input type="radio" name="ssgames" value="NA" checked>NA<br>
+<input type="checkbox" name="ssgamesgo">Advance
+</td>
+
+</tr></tr>
+<!----------------------------------------->
+<td class="sider">Tiebreaker <input type="checkbox" name="breaker"></td>
+<td class="red">
+<input type="radio" name="rjbreaker" value="Won">Won<br>
+<input type="radio" name="rjbreaker" value="Lost">Lost<br>
+<input type="radio" name="rjbreaker" value="NA" checked>NA<br>
+</td>
+
+<td class="blue">
+<input type="radio" name="bbbreaker" value="Won">Won<br>
+<input type="radio" name="bbbreaker" value="Lost">Lost<br>
+<input type="radio" name="bbbreaker" value="NA" checked>NA<br>
+</td>
+
+<td class="green">
+<input type="radio" name="gmbreaker" value="Won">Won<br>
+<input type="radio" name="gmbreaker" value="Lost">Lost<br>
+<input type="radio" name="gmbreaker" value="NA" checked>NA<br>
+</td>
+
+<td class="orange">
+<input type="radio" name="oibreaker" value="Won">Won<br>
+<input type="radio" name="oibreaker" value="Lost">Lost<br>
+<input type="radio" name="oibreaker" value="NA" checked>NA<br>
+</td>
+
+<td class="purple">
+<input type="radio" name="ppbreaker" value="Won">Won<br>
+<input type="radio" name="ppbreaker" value="Lost">Lost<br>
+<input type="radio" name="ppbreaker" value="NA" checked>NA<br>
+</td>
+
+<td class="silver">
+<input type="radio" name="ssbreaker" value="Won">Won<br>
+<input type="radio" name="ssbreaker" value="Lost" id="test">Lost<br>
+<input type="radio" name="ssbreaker" value="NA" checked>NA<br>
+</td>
+
+</tr><tr>
+
+<!-------------------------------->
+<td class="sider">Olmec's Temple</td>
+<td class="red">
+<input type="radio" name="rjtemple" value="Won">Won<br>
+<input type="radio" name="rjtemple" value="Guards">Guards<br>
+<input type="radio" name="rjtemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="rjtemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="rjtemple" value="Guards">Guards<br>
+<input type="radio" name="rjtemple" value="NA" checked>NA<br>
+<input type="text" name="rjtempletime" maxlength=4 size=4>Time<br>
+</td>
+
+<td class="blue">
+<input type="radio" name="bbtemple" value="Won">Won<br>
+<input type="radio" name="bbtemple" value="Guards">Guards<br>
+<input type="radio" name="bbtemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="bbtemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="bbtemple" value="Guards">Guards<br>
+<input type="radio" name="bbtemple" value="NA" checked>NA<br>
+<input type="text" name="bbtempletime" maxlength=4 size=4>Time<br>
+</td>
+
+<td class="green">
+<input type="radio" name="gmtemple" value="Won">Won<br>
+<input type="radio" name="gmtemple" value="Guards">Guards<br>
+<input type="radio" name="gmtemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="gmtemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="gmtemple" value="Guards">Guards<br>
+<input type="radio" name="gmtemple" value="NA" checked>NA<br>
+<input type="text" name="gmtempletime" maxlength=4 size=4>Time<br>
+</td>
+
+<td class="orange">
+<input type="radio" name="oitemple" value="Won">Won<br>
+<input type="radio" name="oitemple" value="Guards">Guards<br>
+<input type="radio" name="oitemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="oitemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="oitemple" value="Guards">Guards<br>
+<input type="radio" name="oitemple" value="NA" checked>NA<br>
+<input type="text" name="oitempletime" maxlength=4 size=4>Time<br>
+</td>
+
+<td class="purple">
+<input type="radio" name="pptemple" value="Won">Won<br>
+<input type="radio" name="pptemple" value="Guards">Guards<br>
+<input type="radio" name="pptemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="pptemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="pptemple" value="Guards">Guards<br>
+<input type="radio" name="pptemple" value="NA" checked>NA<br>
+<input type="text" name="pptempletime" maxlength=4 size=4>Time<br>
+</td>
+
+<td class="silver">
+<input type="radio" name="sstemple" value="Won">Won<br>
+<input type="radio" name="sstemple" value="Guards">Guards<br>
+<input type="radio" name="sstemple" value="Out of Time+Art">Out of Time+Art<br>
+<input type="radio" name="sstemple" value="Out of Time">Out of Time<br>
+<input type="radio" name="sstemple" value="Guards">Guards<br>
+<input type="radio" name="sstemple" value="NA" checked>NA<br>
+<input type="text" name="sstempletime" id="sss" maxlength=4 size=4>Time<br>
+</td>
+</tr><tr><td class="sider" colspan=7><center>
+
+<input type="button" name="submit" value="Create Code!" onclick="document.form1.code.value=getCode();">
+
+<input type="button" name="submit" value="Preview Code!" onclick="document.write(getCode());">
+
+<br>
+<textarea name="code" cols="100" rows="10">Click above for info...</textarea></center>
+
+</tr>
+</table>
+</form>
+
+</body>
+</html>

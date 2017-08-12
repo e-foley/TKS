@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>How would You Do on Legends?</title>
+</head>
+<body bgcolor="chocolate">
+<p align=center><font size=5 face=arial><b>How would You Do on <i>Legends</i>?</b><p align=center><font size=3><b>Here is your performance summary!</b>
+<p align="left">
+
+<!---How to read this chart: The "base score" ranges from 0 to 100, and it simply shows how well-suited to the round you were. A higher score means you have more of the characteristics that make people do well in that round. The "qualifying possibility" ranks your likeliness to succeed in that round and pass into the next. In the temple's case, it shows the chance you will complete it. As with the base score, the "qualifying probability" ranges from 0%, meaning no chance of winning, to 100%, a guaranteed win. Finally, the "most likely outcome" is just that: the outcome you're most likely to achieve in that round. Of course, this is not the only possible outcome.---><p align=center>
+
+
+<script type="text/javascript">
+
+qStr = document.location.search;
+qStr = qStr.substring(1,qStr.length)
+
+theParts = qStr.split("&");
+
+for (i=0;i<theParts.length;i++)
+{
+theParts[i] = theParts[i].replace("=","='") + "'";
+eval(theParts[i]);
+}
+
+var difficulty = 1.0;
+var moatScore = getMoatScore();
+var moatMax = 240 * difficulty;
+var moatLuck = 4;
+var stepsScore = getStepsScore();
+var stepsMax = 88 * difficulty;
+var stepsLuck = 2;
+var game1Score = getGame1Score();
+var game2Score = getGame2Score();
+var game3Score = getGame3Score();
+var game1Max = 164 * difficulty;
+var game2Max = 224 * difficulty;
+var game3Max = 276 * difficulty;
+//var gamesLuck = 2;
+var breakerScore = getBreakerScore();
+var breakerMax = 76 * difficulty;
+var breakerLuck = 2;
+var templeScore = getTempleScore();
+var templeMax = 328 * difficulty;
+var templeLuck = 6;
+var enableNext = false;
+var enableTie = false;
+//var random = false;
+var ourPendants = 0;
+var theirPendants = 0;
+
+function getMoatScore()
+{
+var total = 0;
+total += 3 * bravery;
+total += 6 * perseverence;
+total += 4 * luck;
+total += 7 * balance;
+total += 6 * teamwork;
+total += 7 * determination;
+total += 6 * confidence;
+total += 1 * memory;
+total += 2 * reaction;
+total += 2 * cleverness;
+total += 7 * agility;
+total += 6 * strength;
+total += 3 * knowledge;
+return total;
+}
+
+function getStepsScore()
+{
+var total = 0;
+total += 0 * bravery;
+total += 1 * perseverence;
+total += 2 * luck;
+total += 1 * balance;
+total += 1 * teamwork;
+total += 2 * determination;
+total += 2 * confidence;
+total += 4 * memory;
+total += 3 * reaction;
+total += 3 * cleverness;
+total += 0 * agility;
+total += 1 * strength;
+total += 2 * knowledge;
+return total;
+}
+
+function getGame1Score()
+{
+var total = 0;
+total += 2 * bravery
+total += 2 * perseverence
+total += 6 * luck
+total += 1 * balance
+total += 0 * teamwork
+total += 1 * determination
+total += 4 * confidence
+total += 10 * memory
+total += 3 * reaction
+total += 5 * cleverness
+total += 2 * agility
+total += 2 * strength
+total += 3 * knowledge
+return total;
+}
+
+function getGame2Score()
+{
+var total = 0;
+total += 4 * bravery
+total += 8 * perseverence
+total += 3 * luck
+total += 2 * balance
+total += 0 * teamwork
+total += 8 * determination
+total += 6 * confidence
+total += 1 * memory
+total += 3 * reaction
+total += 2 * cleverness
+total += 8 * agility
+total += 8 * strength
+total += 3 * knowledge
+return total;
+}
+
+function getGame3Score()
+{
+var total = 0;
+total += 6 * bravery
+total += 5 * perseverence
+total += 3 * luck
+total += 2 * balance
+total += 10 * teamwork
+total += 9 * determination
+total += 8 * confidence
+total += 2 * memory
+total += 5 * reaction
+total += 3 * cleverness
+total += 5 * agility
+total += 7 * strength
+total += 4 * knowledge
+return total;
+}
+
+function getBreakerScore()
+{
+var total = 0;
+total += 2 * bravery
+total += 1 * perseverence
+total += 2 * luck
+total += 0 * balance
+total += 0 * teamwork
+total += 1 * determination
+total += 2 * confidence
+total += 4 * memory
+total += 4 * reaction
+total += 2 * cleverness
+total += 0 * agility
+total += 0 * strength
+total += 1 * knowledge
+return total;
+}
+
+function getTempleScore()
+{
+var total = 0;
+total += 6 * bravery
+total += 8 * perseverence
+total += 6 * luck
+total += 1 * balance
+total += 5 * teamwork
+total += 10 * determination
+total += 7 * confidence
+total += 8 * memory
+total += 2 * reaction
+total += 7 * cleverness
+total += 7 * agility
+total += 7 * strength
+total += 8 * knowledge
+return total;
+}
+
+function figureMoatPerformance(percentage)
+{
+var message = "Your team did not manage to finish";
+if (percentage > 50) {message = "Your team was 4th to finish";}
+if (percentage > 62.5) {message = "Your team was 3rd to finish";}
+if (percentage > 75) {message = "Your team was 2nd to finish";}
+if (percentage > 87.5) {message = "Your team was 1st to finish";}
+
+return message;
+}
+
+function figureStepsPerformance(percentage)
+{
+var message = "Your team failed to answer a question correctly";
+if (percentage > (50.0/3.0)) {message = "Your team answered 1 question correctly"; enableNext=false;}
+if (percentage > (100.0/3.0)) {message = "Your team answered 2 questions correctly"; enableNext=false;}
+if (percentage > 50) {message = "Your team was 2nd to finish"; enableNext=true;}
+if (percentage > 75) {message = "Your team was 1st to finish"; enableNext=true;}
+
+return message;
+}
+
+function figureGamesPerformance(percentage1, percentage2, percentage3)
+{
+ourPendants=0;
+theirPendants=0;
+var message;
+
+if (percentage1 <= 48) {ourPendants += 0; theirPendants += 0.5;}
+else if (percentage1 > 52) {ourPendants += 0.5; theirPendants += 0;}
+else if (percentage1 > 48) {ourPendants += 0.5; theirPendants += 0.5;}
+
+if (percentage2 <= 45) {ourPendants += 0; theirPendants += 0.5;}
+else if (percentage2 > 55) {ourPendants += 0.5; theirPendants += 0;}
+else if (percentage2 > 45) {ourPendants += 0.5; theirPendants += 0.5;}
+
+if (percentage3 <= 45) {ourPendants += 0; theirPendants += 1.0;}
+else if (percentage3 > 55) {ourPendants += 1.0; theirPendants += 0;}
+else if (percentage3 > 45) {ourPendants += 1.0; theirPendants += 1.0;}
+
+if (ourPendants > theirPendants) {enableNext=true; message="Your team managed to win " + ourPendants + " pendants in the temple games, beating your opponents, who won " + theirPendants + "";}
+if (ourPendants == theirPendants) {enableTie=true; message="Your team managed to win " + ourPendants + " pendant(s) in the temple games, tying your opponents!";}
+if (ourPendants < theirPendants) {enableNext = false; message="Your team could only win " + ourPendants + " pendant(s) in the temple games, losing to your opponents, who won " + theirPendants + "";}
+
+return message;
+}
+
+function figureBreakerPerformance(percentage)
+{
+var message = "Other team rang in first, answered correctly";
+
+//If you would have won if you had put a 'more-or-less mark' for luckiness
+
+if (percentage < 50 && luck < 2 && getBreakerSpecScore(((breakerScore + (2-luck) * breakerLuck) / breakerMax) * 100) > 50) {message = "You rang in incorrectly; other team stole the question and correctly answered it";}
+
+if (percentage > 50) {message = "You rang in first, correctly";}
+
+//If you would have lost if you had put a 'more-or-less mark' for luckiness
+if (percentage > 50 && luck > 2 && getBreakerSpecScore(((breakerScore + (2-luck) * breakerLuck) / breakerMax) * 100) < 50) {message = "Other team rang in incorrectly; you stole the question and answered correctly";}
+
+return message;
+}
+
+function figureTemplePerformance(percentage)
+{
+var message = "Your team ran out of time before managing to reach the artifact";
+
+//If you would have grabbed the artifact had you chosen a 'more-or-less' mark for luck
+if (percentage < 40 && luck < 2 && getTempleSpecScore(((templeScore + (2-luck) * templeLuck) / templeMax) * 100) > 40 && ourPendants < 2) {message = "Your team was caught by three temple guards";}
+
+if (percentage > 40) message = "Your team managed to grab the artifact; however, you could not exit the temple in time";
+
+//If you would have won had you chosen a 'more-or-less' mark for luck
+if (percentage < 50 && luck < 2 && getTempleSpecScore(((templeScore + (2-luck) * templeLuck) / templeMax) * 100) > 50 && ourPendants < 2) {message = "Your team was caught by three temple guards";}
+
+if (percentage > 50) message = "Your team managed to reach the artifact and successfully retrieve it from the temple!";
+
+return message;
+}
+
+function getMoatSpecScore(percent)
+{
+return 6.761997409 * (Math.pow(percent,0.5849625));
+}
+
+function getStepsSpecScore(percent)
+{
+return percent;
+}
+
+//OLD (60%): return 0.2270616563 * (Math.pow(percent,1.3219281));
+
+function getGamesSpecScore(percent)
+{
+return 0.093509052 * (Math.pow(percent,1.5145732));
+}
+
+function getBreakerSpecScore(percent)
+{
+return 0.093509052 * (Math.pow(percent,1.5145732));
+}
+
+function getOldTempleSpecScore(percent)
+{
+return 0.01 * Math.pow(percent,2.0);
+}
+
+function getTempleSpecScore(percent)
+{
+return 0.0022706166 * Math.pow(percent,2.3219281);
+}
+
+function getFont(percent)
+{
+var final = Math.round(percent * 2.55);
+
+var redTotal = 255 - final;
+var arrayChars = new Array("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
+var firstDigitRed = arrayChars[parseInt(redTotal / 16)];
+var secondDigitRed = arrayChars[parseInt(redTotal % 16)];
+
+var greenTotal = final;
+var firstDigitGreen = arrayChars[parseInt(greenTotal / 16)];
+var secondDigitGreen = arrayChars[parseInt(greenTotal % 16)];
+
+return ("#" + firstDigitRed + secondDigitRed + firstDigitGreen + secondDigitGreen + "00");
+
+}
+
+document.write("<p align=\"center\"><font face=\"arial\"><table bgcolor=\"olive\" width=80%><tr bgcolor=\"darkolivegreen\"><td width=25%><p align=\"right\"><b>Round</b></td><td width=15%><center><b>Base Score</b></td><td width=15%><center><b>Possibility of Advancing/Winning</b></td><td width=45%><p align=\"left\"><b>Most likely outcome</b></td></tr>");
+
+document.write("<tr><td><p align=\"right\"><b>The Moat</b></td><td><font size=\"6\"><center>" + Math.ceil((moatScore / moatMax) * 100) + "</font></td><td bgcolor=" + getFont(getMoatSpecScore((moatScore / moatMax) * 100)) + "><font size=\"6\"><center>" + Math.round(getMoatSpecScore((moatScore / moatMax) * 100)) + "%</font></td><td>" + figureMoatPerformance(getMoatSpecScore((moatScore / moatMax) * 100)) + "</td></tr>");
+
+document.write("<tr><td><p align=\"right\"><b>The Steps of Knowledge</b></td><td><font size=\"6\"><center>" + Math.ceil((stepsScore / stepsMax) * 100) + "</font></td><td bgcolor=" + getFont(getStepsSpecScore((stepsScore / stepsMax) * 100)) + "><font size=\"6\"><center>" + Math.round(getStepsSpecScore((stepsScore / stepsMax) * 100)) + "%</font></td><td>" + figureStepsPerformance(getStepsSpecScore((stepsScore / stepsMax) * 100)) + "</td></tr>");
+
+
+document.write("<tr><td><p align=\"right\"><b>Temple Games</b></td>");
+
+document.write("<td><font size=\"6\"><center>" + Math.ceil((game1Score / game1Max + game2Score / game2Max + 2 * (game3Score / game3Max)) * 25) + "</font><br><font size=\"3\">" + Math.ceil((game1Score / game1Max) * 100) + ", " + Math.ceil((game2Score / game2Max) * 100) + ", " + Math.ceil((game3Score / game3Max) * 100) + "</font></td>");
+
+document.write("<td bgcolor=");
+
+document.write(getFont((getGamesSpecScore((game1Score / game1Max) * 100) + getGamesSpecScore((game2Score / game2Max) * 100) + (getGamesSpecScore((game3Score / game3Max) * 100) * 2)) / 4.0));
+
+document.write("><font size=\"6\"><center>" + Math.round((getGamesSpecScore((game1Score / game1Max) * 100) + getGamesSpecScore((game2Score / game2Max) * 100) + (getGamesSpecScore((game3Score / game3Max) * 100) * 2)) / 4.0) + "%</font><br><font size=\"3\">" + Math.round(getGamesSpecScore((game1Score / game1Max) * 100)) + "%, " + Math.round(getGamesSpecScore((game2Score / game2Max) * 100)) + "%, " + Math.round(getGamesSpecScore((game3Score / game3Max) * 100)) + "%</font></td><td>" + figureGamesPerformance(getGamesSpecScore((game1Score / game1Max) * 100), getGamesSpecScore((game2Score / game2Max) * 100), getGamesSpecScore((game3Score / game3Max) * 100)) + "</td></tr>");
+
+
+document.write("<tr><td><p align=\"right\"><b>Tiebreaker (if necessary)</b></td><td><font size=\"6\"><center>" + Math.ceil((breakerScore / breakerMax) * 100) + "</font></td><td bgColor=" + getFont(getBreakerSpecScore((breakerScore/breakerMax) * 100)) + "><font size=\"6\"><center>" + Math.round(getBreakerSpecScore((breakerScore / breakerMax) * 100)) + "%</td><td>" + figureBreakerPerformance(getBreakerSpecScore((breakerScore / breakerMax) * 100)) + "</td></tr>");
+
+document.write("<tr><td><p align=\"right\"><b>Olmec's Temple</b></td><td><font size=\"6\"><center>");
+document.write(Math.ceil((templeScore / templeMax) * 100));
+document.write("</font></td><td bgColor=");
+document.write(getFont(getTempleSpecScore((templeScore/templeMax) * 100)));
+document.write("><font size=\"6\"><center>");
+document.write(Math.round(getTempleSpecScore((templeScore / templeMax) * 100)));
+document.write("%</td><td>");
+document.write(figureTemplePerformance(getTempleSpecScore((templeScore / templeMax) * 100)));
+document.write("</td></tr>");
+
+document.write("</td></tr></table>");
+
+</script>
+<p align=left><font size="3"><b><a href="http://nicklegends.elfractal.com/legendsquizzes.html"><font color="black">Back to Quizzes Page</font></a></b></font>
+
+<font size=1 face="arial">
+<br>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1984727; 
+var sc_invisible=0; 
+var sc_partition=18; 
+var sc_security="6f55f429"; 
+var sc_text=2; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c19.statcounter.com/counter.php?sc_project=1984727&java=0&security=6f55f429&invisible=0" alt="counter statistics" border="0"></a> </noscript>
+<!-- End of StatCounter Code --><br><a href="http://my.statcounter.com/project/standard/stats.php?project_id=1984727&guest=1"></a>
+</font>
+</body>
+</html>

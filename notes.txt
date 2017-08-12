@@ -1,0 +1,2 @@
+Guestbook pages don't seem to work.
+Old episode pages were not updates to remove GeoCities code.

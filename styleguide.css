@@ -1,0 +1,113 @@
+BODY {background-color: #D2691E; background-image: url("http://i20.photobucket.com/albums/b210/lotht/Other%20Site%20Pictures/pendantbackground.jpg");  
+font-family: arial; font-size: 16px;}
+
+A:link {color: #000000;}
+A:visited {color: #000000;}
+A:hover {color: #333333;}
+A:active {color: #000000;}
+
+A.biglink {font-weight: 400; font-size: 18px;}
+A.bigger {font-weight: bold; font-size: 22px;}
+A.biglinkcenter {font-weight: 400; text-align: center; font-size: 18px;}
+A.center {text-align: center;}
+
+.title {color: black; font-size: 24px; font-family: arial; font-weight: 700; text-align: center;}
+.header {color: black; font-size: 16px; font-family: arial; font-weight: 700; text-align: center;}
+.subheader {color: black; font-family: arial; font-size: 16px; font-weight: 700; text-align: left;}
+.sarcasm {color: black; font-family: arial; font-size: 16px; font-weight: 400; text-align: center;}
+.footer {color: black; font-family: arial; font-size: 10px; font-weight: 400; text-align: center;}
+.countercenter {color: black; font-family: arial; font-size: 10.6px; font-weight: 400; text-align: center;}
+.counterright {color: black; font-family: arial; font-size: 10.6px; font-weight: 400; text-align: right;}
+.counterleft {color: black; font-family: arial; font-size: 10.6px; font-weight: 400; text-align: left;}
+
+
+.linktable {background-color: #A6662B; border-style: outset;
+border-width: 1px; font-family: arial; font-size: 16px; font-weight: 400; width: 75%;}
+.headercell {background-color: #166816; font-family: arial; font-size: 16px; font-weight: 700; text-align: center; border-style: inset; border-width: 1px;}
+.linkcell {border-style: inset; border-width: 1px; font-family: arial; font-size: 16px; font-weight: 700; text-align: left; width: 150px;}
+.desccell {font-family: arial; font-size: 15px; font-weight: 400; text-align: left; border-style: inset; border-width: 1px;}
+.cell {font-family: arial; font-size: 16px; font-weight: 400; border-style: inset; border-width: 1px;}
+.up {vertical-align: top;}
+.big {font-size: 18px;}
+
+.name {font-style: italic; margin-left: 20px;}
+
+.epheading {width: 640px;}
+.eptitle {font-size: 24px; font-weight: 700; text-align: center;}
+.epnumber {font-size: 18px; font-weight: 700; text-align: center;}
+.layoutnumber {font-size: 18px; font-weight: 700; text-align: center;}
+
+.summarytitle {font-weight: bold; margin-left: -20px;}
+.epdivplacemat {margin-bottom: 10px;}
+.epdiv {width: 640px; border-style: outset; border-width: 1px; background-color: #A6662B; border-color: #444444; font-size: 16px;}
+.photobox {width: 520px; border-style: inset; border-width: 1px; padding: 0px; border-color: #444444; font-size: 10px;}
+.summary {font-size: 14px; width: 520px; border-style: inset; border-width: 1px; border-color: #444444; font-weight: normal; padding-left: 20px;}
+.epdivhead {font-size: 16px; font-weight: bold; background-color: #166816; border-style: inset; border-width: 1px; border-color: #444444; text-align: center;}
+.epdivpic {width: 33.33%; height: 123px; margin: 0px; padding: 0px; border-style: none;}
+
+.comment {font-size: 12px; margin-bottom: 10px;}
+
+.diagrambox {border-style: none; border-width: 0px; padding: 0px; border-color: #444444; font-size: 12px; margin: 0px; width: 50%;}
+.diagramlabel {font-size: 10px; text-align: center;}
+.diagramplacemat {border-style: inset; border-width: 1px; padding: 0px; margin: 0px; border-color: #444444;}
+.diagramtable {border-style: none; padding: 0px; margin: 0px;}
+.diagram {width: 100%; margin: 0px;}
+
+.counterdiv {font-size: 10px; text-align: center;}
+
+.team {font-size: 11px; width: 120px; border-style: outset; border-width: 1px; padding: 0px; padding-left: 2px; border-color: #444444; font-style: italic; height: 19px; opacity: 1;}
+.rj {background-color: rgb(198,34,34);}
+.bb {background-color: rgb(0,119,187);}
+.gm {background-color: rgb(7,117,126);}
+.oi {background-color: rgb(221,87,44);}
+.pp {background-color: rgb(130,49,146);}
+.ss {background-color: rgb(183,180,199);}
+.cc {background-color: rgb(153,102,51);}
+.win {font-style: normal; font-weight: bold;}
+
+.rjlight {background-color: rgb(230,66,66);}
+.rjlighter {background-color: rgb(255,98,98);}
+.bblight {background-color: rgb(32,151,219);}
+.bblighter {background-color: rgb(64,183,251);}
+.gmlight {background-color: rgb(39,149,158);}
+.gmlighter {background-color: rgb(71,181,190);}
+.oilight {background-color: rgb(253,119,76);}
+.oilighter {background-color: rgb(255,151,108);}
+.pplight {background-color: rgb(162,81,178);}
+.pplighter {background-color: rgb(194,113,210);}
+.sslight {background-color: rgb(215,212,231);}
+.sslighter {background-color: rgb(247,244,255);}
+
+
+.bold {font-weight: bold;}
+
+.one {background-color: rgb(159,126,63);}
+.half {background-color: rgb(191,152,75);}
+.two {background-color: rgb(223,178,87);}
+.head {background-color: rgb(170,170,170);}
+.italic {font-style: italic;}
+pct {font-weight: normal;}
+.onedark {background-color: rgb(127,101,50);}
+.halfdark {background-color: rgb(153,122,60);}
+.twodark {background-color: rgb(178,142,70);}
+.headdark {background-color: rgb(138,138,138);}
+.onedarker {background-color: rgb(95,76,38);}
+.halfdarker {background-color: rgb(115,91,45);}
+.twodarker {background-color: rgb(134,107,52);}
+.headdarker {background-color: rgb(106,106,106);}
+
+.room {background-color: rgb(191,152,75);}
+.roomdark {background-color: rgb(153,122,60);}
+.roomdarker {background-color: rgb(115,91,45);}
+.floordarker {background-color: rgb(7,117,126);}
+.floordark {background-color: rgb(39,149,158);}
+.floor {background-color: rgb(71,181,190);}
+
+.simple {text-align: left; font-size: 16px; font-weight: normal;}
+.charttable {background-color: rgb(0,0,0); text-align: left;}
+.smalltext {font-size: 12px;}
+
+.interviewee {font-size: 18px; font-weight: bold;}
+.question {font-size: 16px; font-weight: bold;}
+.contributor {font-size: 16px; font-weight: bold; font-style: italic;}
+.response {font-size: 16px; font-weight: normal;}

@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+        <title>Purely Test Page</title>
+
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+<!---<img src="http://nicklegends.elfractal.com/images/bargreen.gif" width=408 height=306>
+
+<img src="http://nicklegends.elfractal.com/images/barred.gif" width=136 height=102>
+
+<img src="http://nicklegends.elfractal.com/images/barred.gif" width=136 height=51>--->
+
+<table width="680" height="459" border="0" cellpadding="0" cellspacing="0">
+<tr height="51">
+<!---Top-left corner--->
+<td bgcolor="black" style="width:136">
+<font color="white"><b>Temple Runner Online<b></font>
+</td>
+
+<!---Top 1--->
+<td>
+<button style="width: 136; height: 51; background-color: #888888;" id="topleft" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!---Top 2--->
+<td>
+<button style="width: 136; height: 51; background-color: #888888;" id="topmid" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Room of the Mandarin Hand</span></button>
+</td>
+
+<!---Top 3--->
+<td>
+<button style="width: 136; height: 51;"><span style="font-size: 14px;">The Tomb of the Headless Kings</span></button>
+</td>
+
+<!---Pendant Box--->
+<td style="background-color: chocolate;" style="width:136">
+Pendants go here...
+</td>
+
+<tr><tr>
+
+<!---Left 1--->
+<td>
+<button style="width: 136; height: 102; background-color: #888888;" id="lefttop" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<td colspan="3" rowspan="3">
+<img src="http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%203/s3r3.jpg" width=408 height=306;>
+</td>
+
+<!---Right 1--->
+<td>
+<button style="width: 136;height: 102; background-color: #888888;" id="righttop" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+</tr><tr>
+
+<!---Left 2--->
+<td>
+<button style="width: 136;height: 102; background-color: #888888;" id="leftmid" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!---Right 2--->
+<td>
+<button style="width: 136;height: 102; background-color: #888888;" id="rightmid" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+</tr><tr>
+
+<!---Left 3--->
+<td>
+<button style="width: 136;height: 102; background-color: #888888;" id="leftbot" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!---Right 3--->
+<td>
+<button style="width: 136;height: 102; background-color: #888888;" id="rightbot" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+</tr><tr>
+
+<!--Fogg-->
+<td rowspan=2>
+<img src="http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%203/s3o1.jpg" width=136 height=102>
+</td>
+
+<!---Bottom 1--->
+<td>
+<button style="width: 136;height: 51; background-color: #888888;" id="rightbot" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!---Bottom 2--->
+<td>
+<button style="width: 136;height: 51; background-color: #888888;" id="rightbot" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!---Bottom 3--->
+<td>
+<button style="width: 136;height: 51; background-color: #888888;" id="rightbot" onClick="workDoor(this.id)"><span style="font-size: 14px;">The Shrine of the Silver Monkey</span></button>
+</td>
+
+<!--Timer--->
+<td bgcolor="darkred">
+Clock goes here</td>
+
+</tr><tr>
+
+<!--Textbox-->
+<td colspan=4 height="51">
+<!--<input type="text" width="544" height="51">-->
+<textarea style="width: 544px; height: 51px;"></textarea>
+</td>
+
+</tr></table>
+
+<br>
+<img src="http://nicklegends.elfractal.com/images/barred.gif" width=680 height=5>
+
+<script type="text/javascript">
+
+var difficulty = 7.50;
+
+topLeftDoor=new Door("topleft", new Array(128,128,128), new Array(0,255,0),10);
+topMidDoor=new Door("topmid", new Array(128,128,128),new Array(0,255,255),3);
+
+doorList= new Array(topLeftDoor, topMidDoor);
+
+document.getElementById("topmid").style.background=getCurrentColor(topMidDoor);
+document.getElementById("topleft").style.background=getCurrentColor(topLeftDoor);
+
+function Door(id, startingColor, endingColor, secondsToTake)
+{
+this.id=id;
+this.startingColor=startingColor;
+this.endingColor=endingColor;
+this.secondsToTake=secondsToTake;
+this.clicks=0;
+this.clicksNeeded=secondsToTake*difficulty;
+}
+
+function getDoorByID(id) {
+for (var i=0; i<doorList.length; i++) {
+  if (doorList[i].id == id)
+    return doorList[i];
+  }
+return null;
+}
+
+function getCurrentColor(door)
+{
+var newRed = ((door.endingColor[0] - door.startingColor[0]) / door.clicksNeeded) * Math.min(door.clicks,door.clicksNeeded) + door.startingColor[0];
+var newGreen = ((door.endingColor[1] - door.startingColor[1]) / door.clicksNeeded) * Math.min(door.clicks,door.clicksNeeded) + door.startingColor[1];
+var newBlue = ((door.endingColor[2] - door.startingColor[2]) / door.clicksNeeded) * Math.min(door.clicks,door.clicksNeeded) + door.startingColor[2];
+
+return num2hex(new Array(newRed, newGreen, newBlue));
+}
+
+function workDoor(id) {
+buttonWorking = document.getElementById(id);
+doorWorking = getDoorByID(id);
+doorWorking.clicks++;
+buttonWorking.style.background=getCurrentColor(doorWorking);
+//buttonWorking.innerHTML = (doorWorking.clicks + "/" + doorWorking.clicksNeeded + " s:" + doorWorking.clicks/difficulty);
+}
+
+
+/*function RGB2HTML(red, green, blue)
+{
+    var decColor = red + 256 * green + 65536 * blue;
+    return decColor.toString(16);
+}*/
+
+//Give a array with three values as the argument and the function will return
+// the corresponding hex triplet.
+function num2hex(triplet) {
+ var hex_alphabets = "0123456789ABCDEF";
+ var hex = "#";
+ var int1,int2;
+ for(var i=0;i<3;i++) {
+  int1 = triplet[i] / 16;
+  int2 = triplet[i] % 16;
+  hex += hex_alphabets.charAt(int1) + hex_alphabets.charAt(int2); 
+ }
+ return(hex);
+}
+
+</script>
+
+</body>
+</html>
