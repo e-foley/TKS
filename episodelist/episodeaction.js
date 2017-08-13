@@ -488,7 +488,7 @@ pictureString += (this.season + "/" + this.shortName + "/");
 pictureString += (prefix + number + ".jpg'>");
 pictureString += "<img src='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 pictureString += (this.season + "/" + this.shortName + "/");
-pictureString += ("th_" + prefix + number + ".jpg' class='epdivpic' ");
+pictureString += (prefix + number + ".jpg' class='epdivpic' ");  // Used to be a "th_" prefix here before 8/12/2017.
 pictureString += ("alt='" + prefix + number + "'></a>");
 return pictureString;
 }
