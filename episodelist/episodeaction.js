@@ -231,9 +231,9 @@ headerString += "Temple Layout: ";
 headerString += (this.season + "-" + this.layout);
 headerString += "</a></td></tr></table></div>";
 headerString += "<div align='center'>"
-headerString += "<a href='http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%20";
+headerString += "<a href='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 headerString += (this.season + "/" + this.shortName + "/" + "artifact.jpg'>");
-headerString += "<img src='http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%20";
+headerString += "<img src='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 headerString += (this.season + "/" + this.shortName + "/" + "artifact.jpg' ");
 headerString += "style='width: 300; border-width: 0px;'></a></div><p>";
 return headerString;
@@ -409,7 +409,7 @@ templeString += "</td></tr>";
 templeString += "<tr><td class='diagramplacemat' colspan='2'>";
 templeString += "<table width='100%' class='diagramtable'><tr>";
 templeString += "<td class='diagrambox'>";
-templeString += "<img src='http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%20";
+templeString += "<img src='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 templeString += (this.season + "/" + this.shortName + "/diagram.jpg' ");
 templeString += "class='diagram' alt='Temple Diagram'>";
 templeString += "</td>"
@@ -483,12 +483,12 @@ else
 
 Episode.prototype.getPictureCode = function(prefix, number) {
 var pictureString = "";
-pictureString += "<a href='http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%20";
+pictureString += "<a href='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 pictureString += (this.season + "/" + this.shortName + "/");
 pictureString += (prefix + number + ".jpg'>");
-pictureString += "<img src='http://i20.photobucket.com/albums/b210/lotht/LOTHT%20Season%20";
+pictureString += "<img src='http://nicklegends.elfractal.com/images/LOTHT%20Season%20";
 pictureString += (this.season + "/" + this.shortName + "/");
-pictureString += ("th_" + prefix + number + ".jpg' class='epdivpic' ");
+pictureString += (prefix + number + ".jpg' class='epdivpic' ");  // Used to be a "th_" prefix here before 8/12/2017.
 pictureString += ("alt='" + prefix + number + "'></a>");
 return pictureString;
 }
